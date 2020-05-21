@@ -9,17 +9,18 @@ import java.lang.annotation.RetentionPolicy;
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Argument {
-    /**
-     * The names that the argument can have.
-     * If this is set then the name field cannot be set.
-     */
-    String[] names() default {};
 
     /**
      * The name of the argument.
      * If this is set the names field cannot be set
      */
     String name() default "";
+
+    /**
+     * The names that the argument can have.
+     * If this is set then the name field cannot be set.
+     */
+    String[] names() default {};
 
     /**
      * Description of the argument.
