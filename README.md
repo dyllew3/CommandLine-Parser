@@ -1,2 +1,3 @@
 # CommandLine-Parser
-Minimal Command line flags parser for java
+
+Command line flags parser for java
