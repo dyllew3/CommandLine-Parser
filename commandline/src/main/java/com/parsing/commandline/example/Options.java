@@ -19,6 +19,12 @@ public class Options {
     private String[] numbers;
 
     /**
+     * Custom separators.
+     */
+    @Argument(names = {"-c", "-separ"}, description = "Custom separators", separator = ";")
+    public String[] customSeparators;
+
+    /**
      * Get filename.
      * @return
      */
